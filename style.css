@@ -1,0 +1,60 @@
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+    text-align: center;
+}
+
+
+table {
+    width: 100%;
+    margin-top: 15px;
+}
+
+
+th {
+    background-color: #88e682; 
+}
+
+
+.btn-add {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+    border: rgb(227, 238, 226)id black;
+    background-color: rgb(131, 230, 151);
+    padding : 10px;
+    border-radius: 20px;
+}
+.btn-delete {
+    color: #f0f0f0;
+    text-decoration: none;
+    border: rgb(227, 238, 226)id black;
+    background-color: rgb(255, 0, 0);
+    padding : 5px;
+}
+
+.thong-ke-box {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    width: 300px;
+}
+
+
+form {
+    width: 350px;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid gray;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+
+.error {
+    color: red;
+}
