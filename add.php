@@ -1,11 +1,9 @@
 <?php
 require_once 'database.php';
 $errors = [];
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  
-    $mssv = trim($_POST['mssv'] ?? '');
-    $hoten = trim($_POST['hoten'] ?? '');
+ 
+    $mssv = $_POST['mssv'] ?? '';
+    $hoten = $_POST['hoten'] ?? '';
     $diem_php = $_POST['diem_php'] ?? '';
     $diem_mysql = $_POST['diem_mysql'] ?? '';
     $diem_html = $_POST['diem_html'] ?? '';
@@ -28,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $errors[] = "Lỗi: Mã sinh viên đã tồn tại hoặc có lỗi hệ thống! " . $e->getMessage();
         }
     }
-}
+
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="" method="POST">
+    <form method="POST">
         <h2>THÊM MỚI SINH VIÊN</h2>
         
         <?php if (!empty($errors)): ?>
